@@ -1,0 +1,117 @@
+.team {
+
+    background-color: #F5F4FA;
+}
+
+.team .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.teamlist  {
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+}
+
+.team-card {
+
+    width: 354px;
+
+    background-color: $primary-white-color;
+    border-radius: 4px;
+     box-shadow: 
+     0px 2px 1px rgba(0, 0, 0, 0.2), 
+     0px 1px 1px rgba(0, 0, 0, 0.14),
+     0px 1px 3px rgba(0, 0, 0, 0.12);
+    //  @media screen and (max-width:480px){
+    //     width: 100%;
+    // }
+    // @media screen and (min-width:480px) and (max-width:767px) {
+    //     width: 450px;
+    
+    @media screen and (max-width:480px){
+        width: 100%;
+    }
+    @media screen and (max-width:767px) {
+        & + & {
+            margin-top: 30px;
+        }
+    }
+    @media screen and (min-width:480px) and (max-width:767px) {
+            width: 450px;
+    }
+    @media screen and (min-width: 768px) and (max-width:1190px) {
+        width: 354px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        &:nth-last-child(-n + 2) {
+            margin-bottom: 0;
+        }
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+    @media screen and (min-width: 1200px){
+        width: 270px;
+        & + & {
+            margin-left: 30px;
+        }
+    }  
+}
+
+.team-title {
+    display: block;
+    font-weight: 700;
+    margin-top: 0;
+
+   @extend %sectionTitleForMobile;
+
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.03em; 
+        margin-bottom: 50px;
+    }
+
+}
+
+.team-name {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.team-photo {
+    display: block;
+
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.team-profession {
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    margin-top: 0px;
+    margin-bottom: 28px;
+}

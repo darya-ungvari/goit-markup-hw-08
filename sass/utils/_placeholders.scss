@@ -1,0 +1,64 @@
+/*все общие стили для всех кнопок*/
+%button {
+    display: inline-block;
+    
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: $primary-white-color;
+
+    min-width: 200px;
+    height: 50px;
+    border: transparent;
+    border-radius: 4px;
+
+    background-color: $accent-color;
+
+    padding: 10px 28px; 
+    cursor: pointer;
+
+    &:focus {
+        outline: 1px solid $accent-color; 
+    }    
+}
+
+/* все общие стили для logo*/
+
+%logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+
+    &:focus {
+        color: currentColor;  
+    }
+}
+
+// центрирование футера в мобильной версии
+%footerMobileCentered {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+%sectionTitleForMobile {
+     letter-spacing: 0.03em;
+     font-size: 28px;
+     line-height: 33px;
+     text-align: center;
+     font-weight: 700;
+     margin-bottom: 30px;
+     margin-top: 0px;
+}
+
+%sectionTitleForDesktop {
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em; 
+    margin-bottom: 50px;
+}

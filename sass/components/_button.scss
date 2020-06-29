@@ -1,0 +1,91 @@
+.button-primary {
+    @extend %button;
+}
+.button-footer {
+    @extend %button;
+    @extend %footerMobileCentered;
+    display: flex;
+    position: relative;
+    padding-left: 28px;
+    padding-right: 28px;
+    justify-content: space-between;
+}
+
+.button-submit {
+    @extend %button;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.radio-button {
+
+    display: inline-block;
+
+    background-color: #F5F4FA;
+
+    color: $title-text-color;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+
+    padding: 6px 22px;
+    min-width: 73px;
+    height: 38px;
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+
+    transition:  background-color $animation-timing-function, color $animation-timing-function;
+
+    &:focus {
+        outline: 1px solid $accent-color;
+    }
+
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+            color: $primary-white-color;
+
+        }
+}
+
+.close-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(204, 204, 204, 1);
+    background-color: var(--primary-white-color);
+    cursor: pointer;
+
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+}
+.close-button:focus {
+    outline: 1px solid  rgba(204, 204, 204, 1); 
+}
+.close-button:focus .close-svg {
+    fill: $accent-color;
+}
+
+.menu-button {
+    border: none;
+    background-color: transparent;
+}
+.menu-button .icon-cross{
+    display: none;
+}
+
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.menu-button.is-open .icon-ham {
+    display: none;
+}

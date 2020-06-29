@@ -1,0 +1,93 @@
+h1 {
+    color: $primary-white-color;
+}
+
+h2, h3 {
+    color: $title-text-color;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    // width: 1200px;
+    
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media (min-width:480px) {
+        width: 480px;
+    }
+
+    @media (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 1200px;
+    }
+
+}
+
+a {
+    cursor: pointer;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vissually-hidden {
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.socialmedia.list {
+
+    display: flex; 
+    padding-bottom: 24px;
+    // padding-left: 31px;
+    // padding-right: 31px; 
+    justify-content: center;
+  
+  
+}
+
+.socialmedia-link {
+    fill: #AFB1B8;
+
+    display: inline-block;
+    
+    padding: 12px 0;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+
+    transition:  fill $animation-timing-function;
+
+    &:hover,
+    &:focus {
+
+    fill: $primary-white-color;
+    background-color: $accent-color; 
+    }
+}
+
+.socialmedia-item {
+    & + & {
+        margin-left: 10px;
+    }
+}

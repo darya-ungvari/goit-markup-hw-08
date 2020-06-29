@@ -1,0 +1,22 @@
+.logo-accent {
+    color: $accent-color;
+}
+
+.logo-header {
+    @extend %logo;
+    color: $title-text-color;
+}
+.logo-footer {
+    @extend %logo;
+    display: block;
+    color: $primary-white-color;
+    font-size: 22px;
+    margin-bottom: 10px;
+
+    transition-property: color $animation-timing-function;
+    
+    &:focus {
+        color: currentColor;
+    }
+}
+    

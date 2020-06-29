@@ -1,0 +1,71 @@
+.clients .container {
+    padding-top: 60px;
+    padding-bottom: 60px;  
+}
+
+.clients-title {
+    @extend %sectionTitleForMobile;
+
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.03em; 
+        margin-bottom: 50px;   
+    }
+}
+
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clients-item {
+    display: block;
+    
+    text-align: center;
+    padding-top: 23px; 
+    width: 50%;  
+    border: 1px solid #AFB1B8 ;
+    border-radius: 4px;
+    height: 90px;
+
+    margin-bottom: 30px;
+    
+    &:hover,
+    &:focus {
+        border: 1px solid;
+    color: $accent-color;
+    }
+
+    @media screen  and (max-width:768px) {
+       
+        width: calc((100% - 30px) / 2);
+        &:nth-child(2n) {
+            margin-left: 30px;
+          }      
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        width: 226px;  
+        & + &:not(:nth-child(4)) {
+            margin-left: 30px;
+        }   
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+        & + & {
+            margin-left: 30px;
+        }
+    }       
+
+}
+
+.clients-svg {
+    fill: #afb1b8;  
+    transition:  fill $animation-timing-function;
+
+    .clients-item:hover & {
+        fill: $accent-color;
+    }
+}
