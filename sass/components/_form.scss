@@ -6,8 +6,10 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity 250ms var(--animation-timing-function), visibility 250ms var(--animation-timing-function);
+    transition: opacity 250ms animation-timing-function, visibility 250ms animation-timing-function;
     z-index: 5;
+    overflow-y: scroll;
+    padding: 50px 30px;
     
 }
 
@@ -15,26 +17,29 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: 250ms var(--animation-timing-function);
+    transition: 250ms $animation-timing-function;
 }
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: relative;
     padding: 40px;
     background-color: #fff;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    transform: translate(-50%, -50%) scale(1);
     z-index: 1;
-
-    @media screen and (max-width: 767px) {
-        width: calc(100% - 60px);
-        max-width: 450px;
+    @media screen and (max-width: 480px) {
+        width: 100%;
+      
+    }
+    @media screen and (min-width: 480px)  {
+        width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX( -50%) scale(1);
     }
 
     @media screen and (min-width: 1200px) {
-        max-width: 528px;
+        width: 528px;
     }
 }
 
@@ -169,7 +174,7 @@
     margin-left: 12px;
     margin-right: 4px;
 
-    transition: var(--animation-timing-function);
+    transition: $animation-timing-function;
 }
 
 .checkbox:checked + .icon-check {
