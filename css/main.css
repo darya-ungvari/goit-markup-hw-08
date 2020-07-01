@@ -430,10 +430,15 @@ a {
   display: inline-block;
   border: 2px solid black;
   border-radius: 3px;
-  margin-left: 12px;
   margin-right: 4px;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-check {
+    margin-left: 12px;
+  }
 }
 
 .checkbox:checked + .icon-check {
@@ -450,12 +455,19 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   display: block;
   margin-bottom: 30px;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .conditions-contract {
