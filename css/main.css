@@ -136,6 +136,19 @@ body.modal-open {
   fill: #2196F3;
 }
 
+body {
+  color: #757575;
+  background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  margin: 0;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
 h1 {
   color: #FFFFFF;
 }
@@ -223,6 +236,24 @@ a {
   margin-left: 10px;
 }
 
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.logo-header, .logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.logo-header:focus, .logo-footer:focus {
+  color: currentColor;
+}
+
 .logo-accent {
   color: #2196F3;
 }
@@ -238,10 +269,6 @@ a {
   margin-bottom: 10px;
   -webkit-transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logo-footer:focus {
-  color: currentColor;
 }
 
 .backdrop {
@@ -1106,6 +1133,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-adress {
+    text-align: left;
+  }
+}
+
 .address-link {
   display: block;
   text-decoration: none;
@@ -1134,6 +1167,12 @@ a {
 @media screen and (min-width: 768px) {
   .footer-joinus {
     width: 206px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-joinus {
+    text-align: left;
   }
 }
 
@@ -1170,6 +1209,12 @@ a {
 @media screen and (min-width: 768px) {
   .footer-followus {
     width: 570px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-followus {
+    text-align: left;
   }
 }
 
@@ -1428,6 +1473,7 @@ a {
     padding-bottom: 60px;
     display: none;
     text-align: center;
+    z-index: 1;
     background-color: #FFFFFF;
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);

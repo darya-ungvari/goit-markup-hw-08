@@ -1,4 +1,16 @@
-.logo-accent {
+.logo-header, .logo-footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+  }
+  
+  .logo-header:focus, .logo-footer:focus {
+    color: currentColor;
+  }
+
+  .logo-accent {
     color: $accent-color;
 }
 
@@ -14,9 +26,6 @@
     margin-bottom: 10px;
 
     transition-property: color $animation-timing-function;
-    
-    &:focus {
-        color: currentColor;
-    }
+
 }
     

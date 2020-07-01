@@ -25,9 +25,11 @@
 
 .footer-adress { 
     @extend %footerMobileCentered;
-
     @media screen and (min-width: 1200px) {
         width: 231px;
+    }
+    @media screen and (min-width: 1200px) {
+        text-align: left;
     }
 }
 
@@ -63,6 +65,9 @@
 
     @media screen and (min-width: 768px) {
         width: 206px;
+    }
+    @media screen and (min-width: 1200px) {
+        text-align: left;
     }
 }
 
@@ -105,6 +110,9 @@
 
    @media screen and (min-width: 768px) {
          width: 570px;
+    }
+    @media screen and (min-width: 1200px) {
+        text-align: left;
     }
     
 }
