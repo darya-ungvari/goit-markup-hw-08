@@ -572,15 +572,30 @@ a {
   margin-top: 60px;
 }
 
-.contact-nav .item + .item {
-  margin-top: 16px;
+@media screen and (max-width: 767px) {
+  .contact-nav .item + .item {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contact-nav .item + .item {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-nav .item + .item {
+    margin-left: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .contact-nav {
     margin-top: 0;
-    margin-left: 84px;
     padding-top: 21px;
+    margin-left: 84px;
+    padding-top: 32px;
   }
 }
 
