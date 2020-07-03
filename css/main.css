@@ -802,7 +802,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .feauter-item {
     width: 354px;
     margin-right: 30px;
@@ -864,7 +864,7 @@ img {
   border-top: 1px solid #ECECEC;
 }
 
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1199px) {
   .aboutus .container {
     display: none;
   }
@@ -875,6 +875,12 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutus-item {
+    display: block;
   }
 }
 
@@ -975,7 +981,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-card {
     width: 354px;
     margin-right: 30px;
@@ -1023,11 +1029,25 @@ img {
   margin-bottom: 10px;
 }
 
+.team-card .thumb {
+  height: 320px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-card .thumb {
+    height: 260px;
+  }
+}
+
 .team-photo {
   display: block;
-  margin-bottom: 30px;
-  margin-right: auto;
-  margin-left: auto;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .team-profession {
@@ -1078,7 +1098,7 @@ img {
   color: #2196F3;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .clients-item {
     width: calc((100% - 30px) / 2);
   }
@@ -1384,7 +1404,15 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (max-width: 767px) {
+  .card-item {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .card-item {
     width: 354px;
   }
@@ -1437,17 +1465,55 @@ img {
   opacity: 0.9;
 }
 
+.card-item .thumb {
+  height: 294px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-item .thumb {
+    height: 294px;
+  }
+}
+
+.category-image {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
 .description-overlay {
   position: absolute;
   color: #FFFFFF;
-  top: 63px;
   left: 24px;
-  -webkit-transform: translateY(170%);
-          transform: translateY(170%);
+  -webkit-transform: translateY(210%);
+          transform: translateY(210%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .description-overlay {
+    top: 77px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .description-overlay {
+    top: 49px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .description-overlay {
+    top: 63px;
+  }
 }
 
 .card:hover .description-overlay {

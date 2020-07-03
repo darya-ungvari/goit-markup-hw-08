@@ -60,11 +60,11 @@
         width: 100%;
     }
     @media screen and (max-width:767px) {
-        // width: 450px;
-        // margin-left: auto;
-        // margin-right: auto;
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
     }
-    @media screen and (min-width: 768px) and (max-width:1200px) {
+    @media screen and (min-width: 768px) and (max-width:1199px) {
         width: 354px;
         &:last-child {
             margin-bottom: 0;
@@ -112,14 +112,38 @@
     opacity: 0.9;   
 }
 
+.card-item .thumb {
+    height: 294px;   
+    margin-bottom: 30px;
+
+    @media screen and (min-width:768px) {
+        height: 294px;        
+    }
+}
+
+.category-image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
 .description-overlay {
     position: absolute;
     color: $primary-white-color;
-
-    top: 63px;
     left: 24px;
-    transform: translateY(170%);
+    transform: translateY(210%);
     transition: transform $animation-timing-function;
+    @media screen and (max-width: 767px){
+        top: 77px;
+    }
+    @media screen and (min-width: 768px){
+        top: 49px;
+    }
+    @media screen and (min-width: 1200px){
+        top: 63px;
+    }
 
     .card:hover & {
         transform: translateY(0);
