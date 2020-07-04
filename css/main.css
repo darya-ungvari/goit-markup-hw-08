@@ -316,8 +316,8 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translateX(-50%) scale(1);
-            transform: translateX(-50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
 }
 
@@ -834,6 +834,12 @@ img {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .feauter-title {
+    text-align: left;
+  }
 }
 
 .feauter-svg {
@@ -1463,11 +1469,6 @@ img {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 0.9;
-}
-
-.card-item .thumb {
-  height: 294px;
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
