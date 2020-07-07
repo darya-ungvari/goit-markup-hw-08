@@ -162,13 +162,13 @@ h2, h3 {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 @media (min-width: 480px) {
   .container {
     width: 480px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -181,6 +181,8 @@ h2, h3 {
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -764,18 +766,6 @@ img {
   }
 }
 
-.feauter .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .feauter .container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .feauter-points {
     display: -webkit-box;
@@ -865,8 +855,6 @@ img {
 }
 
 .aboutus .container {
-  padding-bottom: 94px;
-  padding-top: 94px;
   border-top: 1px solid #ECECEC;
 }
 
@@ -937,18 +925,6 @@ img {
 
 .team {
   background-color: #F5F4FA;
-}
-
-.team .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .team .container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1066,11 +1042,6 @@ img {
   margin-bottom: 28px;
 }
 
-.clients .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 @media screen and (min-width: 1200px) {
   .clients-title {
     font-size: 36px;
@@ -1157,7 +1128,8 @@ img {
 }
 
 .footer.container {
-  padding-top: 48px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   padding-bottom: 21px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
